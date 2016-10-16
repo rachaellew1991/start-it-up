@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning entreperneur</title>
+    
+
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+
+    
+    <script> 
+
+    //to -do
+
+    $(document).ready(function () {
+    $('button').click(function () {
+        $('#todo').append("<ul>" + $("input[name=task]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>");
+    });
+    $("body").on('click', '#todo a', function () {
+        $(this).closest("ul").remove();
+    });
+});
+    //prograss check
+
+    $('.bar-percentage[data-percentage]').each(function () {
+  var progress = $(this);
+  var percentage = Math.ceil($(this).attr('data-percentage'));
+  $({countNum: 0}).animate({countNum: percentage}, {
+    duration: 2000,
+    easing:'linear',
+    step: function() {
+      // What todo on every count
+    var pct = '';
+    if(percentage == 0){
+      pct = Math.floor(this.countNum) + '%';
+    }else{
+      pct = Math.floor(this.countNum+1) + '%';
+    }
+    progress.text(pct) && progress.siblings().children().css('width',pct);
+    }
+  });
+});
+       </script>
+  </head>
+
+  
+  <body>
+
+    
+    <nav class="navbar navbar-a navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="logo.png" alt=""></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="navbar-right">
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">About US</a></li>
+                  <li><a href="camtasia.mp4">My Camtasia</a></li>
+                  <li><a href="groupproject.html">Group Reflection</li>
+              </ul>
+              <a href="#" class="btn navbar-btn btn-info">Log in</a>
+              <a href="#" class="btn navbar-btn btn-a1">Sign up</a>
+              <div class="tel"><span>tel</span> <br> 1-917-705-3993</div>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+    <center><img src="learning.jpg" alt="" class = "title-pic"></center>
+
+
+
+<!-- to-do -->
+<body>
+    <div class="form-group">
+      <h1>Manage your learning <small>To-do List</small></h1>
+    <form role="form">
+        <input type="text" class="form-control" placeholder="Your Task" name="task">
+    </form>
+    <button type="button" class="btn btn btn-primary">Add</button>
+        </div>
+        <div></div>
+    <ul class="list-unstyled" id="todo"></ul>
+</body>
+
+<!-- prograss check -->
+<div id="container">
+  
+  <div id="bar-1" class="bar-main-container azure">
+    <div class="wrap">
+      <div class="bar-percentage" data-percentage="38"><h4>Business Model</h4></div>
+      <div class="bar-container">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="bar-2" class="bar-main-container emerald">
+    <div class="wrap">
+      <div class="bar-percentage" data-percentage="38"></div><h4>Marketing management</h4></div>
+      <div class="bar-container">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="bar-3" class="bar-main-container violet">
+    <div class="wrap">
+      <div class="bar-percentage" data-percentage="38"></div><h4>Oppotunites</h4></div>
+      <div class="bar-container">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="bar-4" class="bar-main-container yellow">
+    <div class="wrap">
+      <div class="bar-percentage" data-percentage="38"></div><h4>Business planning</h4></div>
+      <div class="bar-container">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="bar-5" class="bar-main-container red">
+    <div class="wrap">
+      <div class="bar-percentage" data-percentage="38"></div><h4>Fund raising</h4></div>
+      <div class="bar-container">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!--icon -->
+
+<div class="bg-fff">
+<div class="container">
+    <div class="row">
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="http://searchcloudcomputing.techtarget.com/definition/Software-as-a-Service"><em class="i-ico i-ico1"> </em></a>
+              
+               <h3>Saas</h3>
+               <p>what is Saas</p>
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico2"></em></a>
+               <h3>C TO C</h3>
+              
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico3"></em></a>
+               <h3>how to Pitch</h3>
+               
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico4"></em></a>
+               <h3>Business plan</h3>
+               
+           </div>
+       </div>
+   </div>
+</div>
+<div class="bg-fff">
+<div class="container">
+    <div class="row">
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico1"> </em></a>
+              
+               <h3>B TO B</h3>
+               
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico2"></em></a>
+               <h3>Innovation</h3>
+               
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico3"></em></a>
+               <h3>P TO P</h3>
+               
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico4"></em></a>
+               <h3>fund</h3>
+               
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="bg-fff">
+<div class="container">
+    <div class="row">
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico1"> </em></a>
+              
+               <h3>management</h3>
+               
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico2"></em></a>
+               <h3>risks</h3>
+              
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico3"></em></a>
+               <h3>networking</h3>
+               
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico4"></em></a>
+               <h3>digital marketing</h3>
+               
+           </div>
+       </div>
+   </div>
+</div>

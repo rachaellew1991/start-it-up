@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Start it ip -group project page</title>
+    
+
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script>
+    	$("#multimedia2").hide();
+
+$("#multimedia1").click(function(){
+$("#multimedia2").fadeToggle('slow');
+});
+
+$("#multimedia2").click(function(){
+$("#multimedia2").fadeToggle('slow');
+});
+
+
+$("#split2").hide();
+
+$("#split1").click(function(){
+$("#split2").fadeToggle('slow');
+});
+
+$("#split2").click(function(){
+$("#split2").fadeToggle('slow');
+});
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-a navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="pictures/logo.png" alt=""></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="navbar-right">
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">About US</a></li>
+		              <li><a href="camtasia.mp4">My Camtasia</a></li>
+		              <li><a href="#">Group Reflection</li>
+              </ul>
+              <a href="#" class="btn navbar-btn btn-info">Log in</a>
+              <a href="#" class="btn navbar-btn btn-a1">Sign up</a>
+              <div class="tel"><span>tel</span> <br> 1-917-705-3993</div>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+<div id="reflection" class="group">
+<div class="container">
+      <div class="row row-centered">
+      
+ 		 <div class="col-xs-8 col-centered">
+          <h1>The Handbook of Multimedia Learning</h1>
+          <p>By: Nicola, Rachel, Ruth, Sebastian</p>
+        </div> 
+	
+	 	<div class="col-xs-8 col-centered">
+		<h1>The Multimedia Principle</h1>
+			<p>In the regular classroom setting, students are expected to learn abstract scientific concepts simply by reading textbooks, listening to lectures and sometimes engaging in discussions, which often results in a shallow understanding where the learned information is forgotten soon after the end of the learning events, and is rarely applied to other relevant concepts or fields. Using multiple media is one of the current trends of media use, and Han and Black (2011) showed that multimodal representations were able to gratify students' need for the development of the perceptual experiences necessary to be able to mentally simulate abstract concept.</p>
+
+			<p>According to Mayer (2010), when young people are exposed to multimedia learning, they will process visual images or video clips (i.e. YouTube video), and auditory information (i.e. the podcast and the sound from YouTube video) in separate channels with a limited amount of knowledge processing each time. But, both types of information are processed concomitantly in young people's working memory. Ultimately, the visual and auditory information is incorporated and retained in their long-term memory. Mayers (2010) also suggests each channel processes a limited amount of information each time, and young people are engaged in the active process that helps them to make sense of the new material by associating it with prior knowledge. The following visualization illustrates the implication of cognitive theory on why multimedia makes learning more effective (p. 192).</p>
+
+
+<div class="multimediaContainer">
+	<img src="pictures/multimedia_principle1.png" alt="" id="multimedia1" />
+	<img src="pictures/multimedia_principle2.png" alt="" id="multimedia2" />
+</div>
+</div>
+
+	
+	 <div class="col-xs-8 col-centered">
+		<h1>Split-Attention</h1>
+			<p>Multimedia learning elicits students’ interests in learning, and makes learning more effective. Referring to the previously mentioned cognitive theories, we can notice students hold scare working memory resources when they process learning materials. Therefore, it is important to avoid multimedia designs that require students to split their attention between multiple sources of informations because this results in an insufficient process of learning materials.</p>
+
+			<p>Split attention occurs when students have to divide their attention to absorb and mentally integrate multiple sources of required information in order to understand learning materials or to solve some problems. For instance, in an inefficient multimedia math problem, students would read text information and visualization separately, and then mentally integrate all necessary information into the singular diagram before solving a math problem. Such mental processes consume a large portion of the scarce working memory that results in a over cognitive load. As we are learning to design effective and fun multimedia learning environments, we have to keep in mind the following three take-away from Mayer: 1) eliminate redundant information first, and analyze the logic between multiple resources before integrating isolated information; 2) only high interactive materials can result in split-attention; 3) Low knowledge learners may benefit from physical integration, while high knowledge learners may not.</p>
+
+			
+			<div class="splitContainer">
+				<img src="pictures/split_attention1.png" alt="" id="split1" />
+				<img src="pictures/split_attention2.png" alt="" id="split2" />
+			</div>
+			
+	</div>
+
+	<div>
+		<p>Reference</p>
+
+		<p>Han, I., & Black, J. B. (2011). Incorporating haptic feedback in simulation for learning physics. Computers & Education, 57(4), 2281-2290.</p>
+		<p>Mayer, R. (Ed.). (2005). The Cambridge handbook of Multimedia Learning. New York: Cambridge University Press.</p>
+	</div>
+	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="group_project.js"></script>
+</body>
+</html>

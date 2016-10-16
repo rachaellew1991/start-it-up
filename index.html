@@ -1,0 +1,407 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>STARTITUP</title>
+    
+
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+
+
+    <script> $(document).ready(function() {
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+ 
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+ 
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+        });
+       </script>
+  </head>
+
+  
+  <body>
+
+    
+    <nav class="navbar navbar-a navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="pictures/logo.png" alt=""></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="navbar-right">
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">About US</a></li>
+		              <li><a href="camtasia.mp4">My Camtasia</a></li>
+		              <li><a href="#">Group Reflection</li>
+              </ul>
+              <a href="#" class="btn navbar-btn btn-info">Log in</a>
+              <a href="#" class="btn navbar-btn btn-a1">Sign up</a>
+              <div class="tel"><span>tel</span> <br> 1-917-705-3993</div>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    
+<!-- banner -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+     <!-- 1st slide -->
+    <div class="item active">
+      <div id="banner1">
+        <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="m-hi">
+                    <h1>Let's Start it UP</h1>
+                    <p>Start it up is designed to be viewed as an introduction on how to build a company from scratch.</p>
+                </div>
+                <form action="#" class="form-inline" method="get">
+                    <div class="m-so1">
+                           <input id="question-input" type="text" class="form-control inp input-lg" placeholder="Everything you want to know about startups">
+                           <button type="submit" id="btn-slide1" class="btn btn-info btn-lg">search</button>
+                    </div>
+                </form>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- 2nd slide -->
+    <div class="item">
+     <div id="banner2">
+        <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="m-hi">
+                    <h1>Entrepreneur?</h1>
+                    <p>Understand what is entrepreneur all about</p>
+                </div>
+                    <div class="m-so2">
+                           <a href="page2/page2.html" class="btn slide2-btn btn-slide2">Learn it right now!</a>
+                    </div>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- 3rd slide -->
+    <div class="item">
+     <div id="banner3">
+        <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="m-hi">
+                    <h1>Oppotunity And Plan</h1>
+                    <p>Opportunities for new businesses arise in the market and how to spot them?</p>
+                    </div>
+                           <div class="m-so2">
+                           <a href="#" class="btn slide2-btn btn-slide2">Learn it right now!</a>
+                    </div>    
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+<!-- banenr end -->
+
+<!-- circles -->
+<div class="bg-fff">
+<div class="container">
+    <div class="row">
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico1"> </em></a>
+              
+               <h3>basic knowledge</h3>
+               <p>what is entrpreneur all about? </p>
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico2"></em></a>
+               <h3>oppotunities </h3>
+               <p>How to spot oppotunites and achieve goals</p>
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico3"></em></a>
+               <h3>busienss models and innovation</h3>
+               <p>Learn about variou of business models and innovate your own!</p>
+           </div>
+       </div>
+       <div class="col-md-3 col-sm-6">
+           <div class="i-icobox">
+               <a href="#"><em class="i-ico i-ico4"></em></a>
+               <h3>Business plan and funding</h3>
+               <p>Pitch your idea with peers, professionals, investors!</p>
+           </div>
+       </div>
+   </div>
+</div>
+</div>
+
+<div id="seperator"></div>
+<div class="down"></div>
+
+<!-- circles end-->
+
+<div class="learn-online">
+<div class="g-maintit" id="learn-online-tit">
+    <h2>From Idea To Launch</h2>
+    <p> a step by step manual to walk an entrepreneur through the process of launching a venture. </p>
+</div>
+    <div class="container">
+        <div class="row">
+          
+           <div class="col-md-4">
+               <div class="i-msg">
+                <div class="animation-element slide-left">
+                 <div class="subject">
+                  <em class="i-msg-img i-msg1"></em>
+               </div>
+             </div>
+                   <h3>learning</h3>
+                   <p>What is entrpreneur all about? <br>How to spot oppotunities?</p>
+                   <p>
+                       <a href="page2.html" class="btn btn-blue">Start</a>
+                   </p>
+               
+     </div>
+              </div>
+        
+           <div class="col-md-4">
+               <div class="i-msg">
+                 <div class="animation-element slide-left">
+            <div class="subject">
+                <em class="i-msg-img i-msg2"></em>
+                </div>
+             </div>
+                   <h3>Innovation</h3>
+                   <p>Creatively formulate your own business model by step to step!</p>
+                   <p>
+                       <a href="page3/page3.html" class="btn btn-blue">Start</a>
+                   </p>
+               
+           </div>
+         </div>
+         
+           <div class="col-md-4">
+               <div class="i-msg">
+                <div class="animation-element slide-left">
+                 <div class="subject">
+                <em class="i-msg-img i-msg3"></em>
+                 </div>
+             </div>
+                   <h3>Pitch Your Idea</h3>
+                   <p>Pitch your idea with peers, professionals, investors!</p>
+                   <p>
+                       <a href="" class="btn btn-blue">Start</a>
+                   </p>
+              
+           </div>
+       </div>
+     </div>
+    </div>
+</div>
+
+
+<!-- find talent -->
+<div class="bg-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="g-maintit g-maintit2">
+                    <h2>Find Talent </h2>
+                    <p>Find talent with skills you need to work as startup team</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <form action="#" method="q" class="form-inline">
+                    <div class="m-so-x">
+                           <input type="text" class="form-control inp input-lg" placeholder="Search skill , gender, location">
+                           <button type="submit" class="btn btn-a2 btn-lg">search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- find talent end -->
+
+<!-- news -->
+    <div class="g-maintit">
+      <br><br><br>
+        <h2>Startup News </h2>
+        <p>Provide the most updated news every seconds, identify new oppotunites and market trend</p>
+    </div>
+<div class="container">
+      <ul class="list-txt">
+        <div class="container">
+<div class="row">
+  <div class="col-md-6">
+      <ul class="list-txt">
+<li> 
+        <a href=http://techcrunch.com/><span class="date">
+            <em>30 seconds ago</em>
+        </span>  </a>  
+        <h4><a href="http://techcrunch.com/">Bar Roulette routes your Uber to a random bar nearby/a></h4>
+        <p>Apps news</p>
+        </li>
+<li> 
+        <a href=#><span class="date">
+            <em>45 seconds ago</em>
+        </span>  </a>  
+        <h4><a href="http://techcrunch.com/">West Ham becomes first English Premiership football club to sign an e-sports player</a></h4>
+        <p>Business News</p>
+        </li>
+
+  
+      </ul>
+    </div>
+
+    <div class="col-md-6">
+      <ul class="list-txt">
+<li> 
+        <a href="http://techcrunch.com/"><span class="date">
+            <em>3 minutes ago</em>
+        </span>  </a>  
+        <h4><a href="http://techcrunch.com/"></a>A $1 paper-based test can detect the Zika virus in around two hours</h4>
+        <p>Hardware News</p>
+        </li>
+<li> 
+        <a href="#"><span class="date">
+            <em>10 minutes ago</em>
+        </span>  </a>  
+        <h4><a href="http://techcrunch.com/">Lenovo is launching a new $500 million startup fund</a></h4>
+        <p>Asia News</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+   
+</div>
+ <p class="i-more text-center">
+          <a href="http://techcrunch.com/" class="btn btn-load">More News</a>
+      </p>
+</div>
+      </ul>
+</div>
+<br><br><br>
+<!-- News end -->
+
+    
+    <div class="container">
+        
+        
+    </div>
+
+    
+    
+
+    <hr>
+    <footer>
+     
+      <div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="contact">
+                
+
+                <div class="ask">
+                 <div class="footer-icon footer-icon1">
+                  <img src="https://lh3.googleusercontent.com/-BX5eXAqWCfo/VvBwCJ8vjUI/AAAAAAAACeI/YeRvG7aUZxUrqndskdI06caTz6Eo2ExJwCCo/s188-Ic42/footer-icon1.png" height="45" width="45">
+                 </div>
+                    <p>Contact Me</p>
+                    <p class="phone">1-917-705-3993</p>
+                    </div>
+
+            <div class="ask">
+              <div class="footer-icon footer-icon2">
+                <img src="https://lh3.googleusercontent.com/-QzxiSRcf8Bk/VvBwE09TQYI/AAAAAAAACeA/HPanHRVbsQICj3pY5ltaJ0d0oy42CQ5uACCo/s188-Ic42/footer-icon2.png" height="45" width="45">
+                 </div>
+              <p>Email me</p>
+              <p class="website"><a href="mailto:info@nyis.com">rl2770@tc.columbia.edu</a></p>
+            </div>
+
+                  
+           </div>
+
+</div>
+
+            
+           
+        <div class="row">
+          <div class="col-md-12 legal">
+          <p class="copy">© Copyright 2016 Ruichen Liu</p>
+          </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+   
+    </footer>
+    
+
+    <script type="text/javascript"> 
+    $("select2").select2({dropdownCssClass: 'dropdown-inverse'});
+    </script>
+   
+  </body>
+</html>
+

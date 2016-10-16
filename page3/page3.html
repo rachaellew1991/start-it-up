@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>business model canvas</title>
+    
+
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+
+  <script>
+    (function () {
+    var dragElement, dragElements, dropZoneOne, elementDragged, i, len;
+    dropZoneOne = document.querySelector('#drop-target-one');
+    dragElements = document.querySelectorAll('#drag-elements li');
+    elementDragged = null;
+    for (i = 0, len = dragElements.length; i < len; i++) {
+        if (window.CP.shouldStopExecution(1)) {
+            break;
+        }
+        dragElement = dragElements[i];
+        dragElement.addEventListener('dragstart', function (e) {
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text', this.innerHTML);
+            return elementDragged = this;
+        });
+        dragElement.addEventListener('dragend', function (e) {
+            return elementDragged = null;
+        });
+    }
+    window.CP.exitedLoop(1);
+    dropZoneOne.addEventListener('dragover', function (e) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+        e.dataTransfer.dropEffect = 'move';
+        return false;
+    });
+    dropZoneOne.addEventListener('dragenter', function (e) {
+        return this.className = 'over';
+    });
+    dropZoneOne.addEventListener('dragleave', function (e) {
+        return this.className = '';
+    });
+    dropZoneOne.addEventListener('drop', function (e) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+        if (e.stopPropagation) {
+            e.stopPropagation();
+        }
+        this.className = '';
+        this.innerHTML = 'Dropped ' + e.dataTransfer.getData('text');
+        return document.querySelector('#drag-elements').removeChild(elementDragged);
+    });
+}.call(this));
+  </script>
+
+    
+  </head>
+
+  
+  <body>
+
+    
+    <nav class="navbar navbar-a navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="logo.png" alt=""></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="navbar-right">
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">About US</a></li>
+                  <li><a href="camtasia.mp4">My Camtasia</a></li>
+                  <li><a href="groupproject.html">Group Reflection</li>
+              </ul>
+              <a href="#" class="btn navbar-btn btn-info">Log in</a>
+              <a href="#" class="btn navbar-btn btn-a1">Sign up</a>
+              <div class="tel"><span>tel</span> <br> 1-917-705-3993</div>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row row-centered">
+        <div class="col-xs-8 col-centered">
+          <a class="title-pic" href="#"><img src="BMCVT.jpg" alt=""></a>
+        </div>
+
+       
+        <div class="col-xs-8 col-centered">
+          <h1>A Language for Strategy and Innovation: How the Business Model Canvas Creates Value for its Users:</h1>
+            <p class="text-BMCV">The Business Model Canvas has been downloaded more than 5,000,000 times on our website. We asked survey respondents to highlight how the Business Model Canvas creates value for them. The main contributions lie in providing a shared language, leading to better strategic conversations and better ideas on the table.</p>
+  <a class="page2-pic" href="#"><img src="BMCV1.png" alt=""></a>
+        </div>
+
+        
+         <div class="col-xs-8 col-centered">
+          <h1>Seduction of the Canvas:  Why Users Decide to Adopt the Canvas</h1>
+             <p class="text-BMCV">Canvas users appreciate the visual, practical, and intuitive aspects of the Business Model Canvas most, leading to better group discussions. We learned that the Canvas is particularly valued in cross-functional teams and especially among users in non-business functions (IT, engineers, scientists, etc.).</p>
+  <a class="page2-pic" href="#"><img src="BMCV2.png" alt=""></a>
+        </div>
+
+   <div class="col-xs-8 col-centered">
+          <h1>Putting the Canvas to Work: How Does the Canvas Help?</h1>
+             <p class="text-BMCV"> Users put the Canvas to work in very different areas of their organizations. The majority of our surveyed users apply the Business Model Canvas to develop entirely new businesses, launch new products and services, or revamp their existing business model and strategy.Applications span from strategic reorientation at the corporate level, all the way to better understanding of B2B clients and on-boarding senior executives and new employees.</p>
+  <a class="page2-pic" href="#"><img src="BMCV3.png" alt=""></a>
+        </div>
+
+<div class="col-xs-8 col-centered">
+          <h1>Disrupting the Strategic Plan</h1>
+             <p class="text-BMCV">An increasing number of users apply the Business Model Canvas to describe current and future strategy. A Google Trend analysis shows how the traditional strategic plan is losing popularity, while the Canvas is gaining popularity. The latter was coined in 2009, while the former has a much longer track record.</p>
+  <a class="page2-pic" href="#"><img src="BMCV4.png" alt=""></a>
+
+        <div class="col-xs-8 col-centered">
+          <h1>New Creat Your Own Business Model!</h1>
+          <center><img src="BMCVP.png"></center>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+<ul id='drag-elements'>
+  <li draggable='true'>target</li>
+  <li draggable='true'>price</li>
+  <li draggable='true'>logistic</li>
+  <li draggable='true'>YC incubinator</li>
+  <li draggable='true'>team</li>
+</ul>
+<div id='creat-stickers'>
+<center><p>creat stickers here!</p></center>
+</div>
+
+<!-- a ideal sample -->
+<h3>New Creat Your Own Business Model!</h3>
+<center><img src="BMCM.jpg"></center>
+
+
+  
